@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <tegra_eduzzpayment>
+                <active>1</active>
+                <model>EduzzPaymentFacade</model>
+                <order_status>pending</order_status>
+                <title>Eduzz Pagamento</title>
+                <currency>BRL</currency>
+                <can_authorize>1</can_authorize>
+                <can_use_checkout>1</can_use_checkout>
+                <is_gateway>1</is_gateway>
+
+                <public_eduzz_key/>
+                <private_eduzz_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </tegra_eduzzpayment>
+        </payment>
+    </default>
+</config>
